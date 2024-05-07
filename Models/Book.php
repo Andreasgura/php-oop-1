@@ -18,7 +18,7 @@ class Book
         $this->isbn = $isbn;
         $this->pageCount = $pageCount;
         $this->thumbnailUrl = $thumbnailUrl;
-        $this->shortDescription = $longDescription;
+        $this->longDescription = $longDescription;
         $this->authors = $authors;
     }
 

@@ -22,7 +22,7 @@ class Movie {
     public function printStars() {
         $stars = round($this->vote_average / 2);
         $template = "";
-        for ($i = 0; $i < $stars; $i++) {
+        for ($i = 0; $i <= $stars; $i++) {
             $template .= "<i class='fas fa-star'></i>";
         }
         return $template;
