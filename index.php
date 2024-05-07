@@ -1,9 +1,12 @@
 <?php 
 include __DIR__ . "/./Views/head.php";
+include __DIR__ ."/Controllers/printmovies.php";
+printMovies();
+
 ?>
 
 <main class="container">
-    ciao
+    
 </main>
 
 
