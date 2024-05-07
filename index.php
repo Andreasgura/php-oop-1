@@ -5,12 +5,19 @@ $movieList = printMovies();
 
 ?>
 
-<main class="container">
-    <div class="row">
-        <?php foreach ($movieList as $movie) 
-        include __DIR__ ."/./Views/movieCard.php";
-        ?>
-    </div>
+<main>
+    <section class="container mt-5">
+        <h2 class="text-center">Lista dei film</h2>
+        <div class="container">
+            <div class="row">
+                <?php foreach ($movieList as $movie)
+                    include __DIR__ . "/./Views/movieCard.php";
+                ?>
+            </div>
+        </div>
+    </section>
+    
+
 </main>
 
 
