@@ -13,12 +13,12 @@ class Book
     public $authors;
     public $categories;
 
-    public function __construct($title, $isbn, $pageCount, $thumbnailUrl, $shortDescription, $authors){
+    public function __construct($title, $isbn, $pageCount, $thumbnailUrl, $longDescription, $authors){
         $this->title = $title;
         $this->isbn = $isbn;
         $this->pageCount = $pageCount;
         $this->thumbnailUrl = $thumbnailUrl;
-        $this->shortDescription = $shortDescription;
+        $this->shortDescription = $longDescription;
         $this->authors = $authors;
     }
 

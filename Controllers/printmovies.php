@@ -1,5 +1,6 @@
 <?php
 include_once __DIR__ . "/../Models/movie.php";
+include_once __DIR__ . "/../Models/book.php";
 
 function printMovies()
 {
@@ -19,9 +20,9 @@ function printBooks()
     $books = json_decode(file_get_contents(__DIR__ . "/../js/books_db.json"), true);
     // var_dump($movies);
     $bookList = [];
-    // $id, $original_language, $original_title, $overview, $poster_path
+    // $$title, $isbn, $pageCount, $thumbnailUrl, $longDescription, $authors
     foreach ($books as $book) {
-        $bookList[] = new Book($book['id'], $book['original_language'], $book['original_title'], $book['overview'], $book['poster_path'], $book['vote_average']);
+        $bookList[] = new Book($book['title'], $book['isbn'], $book['pageCount'], $book['thumbnailUrl'], $book['longDescription'], $book['authors']);
     }
     return $bookList;
 }
